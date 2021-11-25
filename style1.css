@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ffff;
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .btn{
+    position: relative;
+    display: block;
+    color: black;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #ff7675;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+  }
+  .btn::before{
+    background: #ff7675;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1; /*элементы не накладываются друг на друга*/
+    transition: all 0.6s ease; /*плавная анимация*/
+  }
+  
+  .btn1::before{
+    width: 0%;
+    height: 100%;
+  }
+  
+  .btn1:hover::before{
+    width: 100%;
+  }
+  
+  
+  .btn2::before{
+    width: 100%;
+    height: 0%;
+  }
+  .btn2:hover::before{
+    height: 100%;
+  }
+  
+  .btn3::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  .btn3:hover::before{
+    height: 380%;
+  }
+  
+  .btn4 {
+    position: relative;
+
+  
+    transition: background-color .2s linear,
+                color .2s linear;
+  }
+  
+  .btn4::before,
+  .btn4::after {
+    display: block;
+    content: "";
+  
+    position: absolute;
+    z-index: 1;
+  
+    width: 0;
+    height: 3px;
+  
+    background-color: #ff7675;
+    transition: width .2s linear;
+  }
+  
+  .btn4::before {
+    top: 0;
+    right: 0;
+  }
+  
+  .btn4::after {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .btn4:hover {
+    color: #ff7675;
+    background-color: #eeeee4;
+  }
+  
+  .btn4:hover::before,
+  .btn4:hover::after {
+    width: 100%;
+  }
+
+
+
+  .btn5 {
+    border-color: #ff7675;
+    color:black;
+    box-shadow: 0 0 40px 40px #ff7675 inset, 0 0 0 0 #ff7675;/*тень внутри объекта*/
+    transition: all 150ms ease-in-out;
+  }
+  .btn5:hover {
+    box-shadow: 0 0 10px 0 #ff7675 inset, 0 0 10px 4px #ff7675;
+  }
