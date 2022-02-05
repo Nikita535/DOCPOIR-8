@@ -71,8 +71,8 @@
     top: 0;
     left: 50%;
   
-    z-index: 6;
-    transform: translate(-50%, -52%);
+  
+    transform: translate(-50%, -50%);
   
     width: 115%;
     height: 330px;

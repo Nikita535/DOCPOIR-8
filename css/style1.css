@@ -94,10 +94,6 @@ body{
     left: 0;
   }
   
-  .btn4:hover {
-    color: #ff7675;
-    background-color: #eeeee4;
-  }
   
   .btn4:hover::before,
   .btn4:hover::after {
